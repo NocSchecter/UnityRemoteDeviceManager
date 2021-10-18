@@ -1,22 +1,9 @@
  using System.Diagnostics;
 
-/*************************************************************************
-*  Copyright � 2020-2021 Hypnogic. All rights reserved.
-*------------------------------------------------------------------------
-*  File         :  PSTools.cs
-*  Description  :  Libreria para el control remoto de dispositivos
-*------------------------------------------------------------------------
-*  Author       :  Erick
-*  Version      :  1.0
-*  Date         :  19/08/21
-*************************************************************************/
-
 namespace RemoteManagement
 {
     public static class PSTools
     {
-        #region METODOS PARA CERRAR APLICACIONES DE FORMA LOCAL Y REMOTA
-
         public static void KillRemoteApp(string ip, int userIndex, string appName)
         {
             string arguments = @"\\" + ip + userIndex + " -u " + "\"" + DeviceRemoteDefine.session + "\"" + " -p " + DeviceRemoteDefine.paswword + " " + '"' + appName + '"';
@@ -30,10 +17,6 @@ namespace RemoteManagement
                 app.Kill();
         }
 
-        #endregion
-
-        #region METODOS PARA ABRIR APLICACIONES DE FORMA LOCAL Y REMOTA
-
         public static void LaunchingRemoteApp(string ip, int userIndex, string appName)
         {
             string arguments =  "-i 1 -d " + @"\\" + ip + userIndex + " -u " + DeviceRemoteDefine.session + " -p " + DeviceRemoteDefine.paswword + " " + '"' + appName + '"';
@@ -44,8 +27,6 @@ namespace RemoteManagement
         {
             Process.Start(appName);
         }
-
-        #endregion
 
         private static void StartProcess(string args, string command)
         {
