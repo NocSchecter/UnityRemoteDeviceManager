@@ -1,5 +1,5 @@
 # Unity Remote Device Manager
-Small manager in Unity, which manages the startup and shutdown of an application on a remote device using PStools.
+Small manager in Unity 2020.3.12f1, which manages the startup and shutdown of an application on a remote device using PStools.
 
 Prerequisites
 
