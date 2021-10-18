@@ -1,7 +1,7 @@
 # Unity Remote Device Manager
 Small manager in Unity 2020.3.12f1, which manages the startup and shutdown of an application on a remote device using PStools.
 
-Prerequisites
+REREQUISITES
 
 Windows
 1. Enable the "Shared files and printers" inbound rule in the firewall.
@@ -13,17 +13,17 @@ PSTools suite
 2. Unzip the file containing PStools suite and copy its contents to the path "C:\", e.g.
 3. Add the path C:\PSTools\ to the windows environment variables.
 
-How to use
+HOW TO USE
 
 1. To launch a process: call LaunchingRemoteApp inside PStools.
 2. To stop a process: call KillRemoteApp inside PSTools.
 
-Limitations: 
+LIMITATIONS
 
 1.There is instability in having two user accounts and switching between them.
 
-To do:
+TO DO
 
 1. Remote device shutdown.
 2. Remote device reboot.
-3. Remote device power on using Wake On Lan
+3. Remote device power on using Wake On Lan.
