@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 using RemoteManagement;
 using System.IO;
@@ -13,7 +14,7 @@ public class DeviceRemoteManager : MonoBehaviour
         for (int i = 0; i < devicesAmount; i++)
         {
             PSTools.LaunchingRemoteApp(ip , i + 1, remoteApp);
-            Debug.Log("Launching app on remote device " + (i + 1));
+            UnityEngine.Debug.Log("Launching app on remote devices " + (i + 1));
         }
     }
 
@@ -22,7 +23,25 @@ public class DeviceRemoteManager : MonoBehaviour
         for (int i = 0; i < devicesAmount; i++)
         {
             PSTools.KillRemoteApp(ip , i + 1, Path.GetFileName(remoteApp));
-            Debug.Log("Killing app on remote device " + (i + 1));
+            UnityEngine.Debug.Log("Killing app on remote devices " + (i + 1));
         }        
+    }
+
+    public void ShutdownRemoteDevices()
+    {
+        for (int i = 0; i < devicesAmount; i++)
+        {
+            PSTools.ShutdownRemoteDevice(ip, i + 1);
+            UnityEngine.Debug.Log("Shutdown remote devices " + (i + 1));
+        }
+    }
+
+    public void RestartRemoteDevices()
+    {
+        for (int i = 0; i < devicesAmount; i++)
+        {
+            PSTools.RestartRemoteDevice(ip, i + 1);
+            UnityEngine.Debug.Log("Restart remote devices" + (i + 1));
+        }
     }
 }
