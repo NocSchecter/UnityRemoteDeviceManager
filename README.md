@@ -14,9 +14,10 @@ Small manager in Unity 2020.3.12f1, which manages the startup and shutdown of an
 # PREREQUISITES BEFORE USE
 
 Windows
-1. Enable incoming "Ping" https://www.youtube.com/watch?v=1BGdvSyAADw
-2. Disable "Remote UAC" : https://www.poweradmin.com/help/pa-server-monitor-8-3/howto_disable_remote_uac.aspx
-3. Assign an ip range you want pstools to work with.
+1. Set a user and password to the devices.
+2. Enable incoming "Ping" https://www.youtube.com/watch?v=1BGdvSyAADw
+3. Disable "Remote UAC" : https://www.poweradmin.com/help/pa-server-monitor-8-3/howto_disable_remote_uac.aspx
+4. Assign an ip range you want pstools to work with.
 
 PSTools suite
 1. Download PStools suite from the following link: https://docs.microsoft.com/en-us/sysinternals/downloads/pstools
