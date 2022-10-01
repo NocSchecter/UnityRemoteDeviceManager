@@ -26,8 +26,8 @@ PSTools suite
 
 # HOW TO USE
 
-1. To remotely launch an application, call the method LaunchingRemoteApp inside PStools script.
-2. To remotely stop an application, call the method KillRemoteApp inside PSTools script.
+1. To remotely launch an application, call the method LaunchingRemoteApp() inside PStools script.
+2. To remotely stop an application, call the method KillRemoteApp() inside PSTools script.
 3. To launch an application locally, call the method LaunchingLocalApp() iniside PSTools script.
 4. To stop an application locally, call the method KillLocalApp() indise PSTools script.
 
